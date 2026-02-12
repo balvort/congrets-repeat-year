@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 500px;
+      margin: 20px;
+      animation: fadeIn 1.5s ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    img {
+      width: 220px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    h1 {
+      margin-top: 15px;
+      font-size: 32px;
+      color: #5a4b2c;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background: #ffb347;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ff9933;
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #5a4b2c;
+      display: none;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="duck.jpg" alt="Birthday Duck">
+    <h1>Happy Birthday!</h1>
+    <button onclick="showMessage()">Klik untuk pesan spesial</button>
+
+    <div class="message" id="msg">
+      <p>
+        Untukmu, seseorang yang membuatku jatuh cinta,<br>
+        Semoga tahun ini penuh dengan hal-hal manis dan menyenangkan,
+        seceriah senyummu yang manis! ✨
+      </p>
+
+      <p>
+        Kamu telah berusaha dengan sangat baik hingga saat ini,
+        kamu berhak mendapatkan penghargaan untuk itu.
+        Hadiah terbaik adalah ketika apa yang kamu inginkan tercapai,
+        jadi aku akan selalu mendukungmu mencapai hal-hal yang ingin kamu raih.
+      </p>
+
+      <p>
+        Kamu pasti menggapai apa yang kamu impikan.
+        Semoga kamu diberikan kelancaran dalam belajar
+        dan selalu menjadi pribadi yang luar biasa.
+      </p>
+
+      <p>
+        Fun fact: ini aku buat H-4 jam, maaf ya kalau simpel dan seadanya,
+        semoga kamu suka sama ide dadakan aku 😘
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("msg").style.display = "block";
+    }
+  </script>
+
+</body>
+<div class="music-player">
+  <iframe width="0" height="0"
+    src="https://www.youtube.com/embed/rExJ6j5OeCo?autoplay=1&loop=1&playlist=rExJ6j5OeCo"
+    frameborder="0"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+</div>
+
+</html>
